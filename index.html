@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="papaparse.min.js"></script>
+	</head>
+	<body ng-app="hots" ng-controller="mainController">
+		<h1>HotS Aggregate Data</h1>
+		<input custom-on-change="readFile" type="file" />
+		<div id="main">
+			<div id="character-counts" ng-if="characters">
+				<h2>Character Counts</h2>
+				<div class="character" ng-repeat="(name, count) in characters">
+					{{name}}<br/>{{count}}
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

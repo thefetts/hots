@@ -1,0 +1,7 @@
+.character {
+	display: inline-block;
+	width: 120px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 5px;
+}
